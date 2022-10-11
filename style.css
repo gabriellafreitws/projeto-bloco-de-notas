@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 224, 224) ;
+}
+
+.app{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar{
+    height: 3rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(237, 100, 118);
+    box-shadow: 0px 1px 1px #aaaa;
+    color: #fafafa;
+    align-items: center;
+}
+
+.topbar__button{
+    height: 2rem;
+    padding: 0 0.5rem;
+    color: rgb(237, 100, 118);
+    cursor: pointer;
+    background: #fafafa;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.notes-container{
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.note{
+    width: 100%;
+    max-width: 480px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(237, 100, 118);
+    box-shadow: 0px 1px 1px #aaaa;
+}
+
+.note__bar{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.note__text{
+    padding: 0.5rem;
+    flex: 1;
+    background: #fafafa;
+    color: #131313;
+    border-radius: 0 0 0 10%;
+}
+
+.note__editor{
+    flex: 1;
+    resize: none;
+    padding: 0.5rem;
+
+}
+
+.note__bar .fas{
+    color: #fafafa;
+    cursor: pointer;
+}
